@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Abalone_Smile";
+  src: url("/fonts/AbaloneSmile.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-accent: #4a85d9;
+  --font-abalone: "Abalone_Smile";
+}
