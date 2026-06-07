@@ -1,6 +1,8 @@
+import Container from "./components/Container";
+
 export default function Home() {
   return (
-    <div className="px-8">
+    <Container>
       {/* Hero */}
       <section className="pt-48 pb-24 max-w-2xl">
         {/* Open to opportunities indicator */}
@@ -19,6 +21,6 @@ export default function Home() {
           <span className="font-abalone text-accent">useful products.</span>
         </h1>
       </section>
-    </div>
+    </Container>
   );
 }
