@@ -7,18 +7,18 @@ export default function Home() {
       {/* Hero */}
       <section
         className="pb-24 flex flex-col justify-center"
-        style={{ minHeight: "calc(100vh - 72px" }}
+        style={{ minHeight: "calc(90vh - 72px" }}
       >
         <div className="max-w-2xl">
           {/* Open to opportunities indicator */}
           <div className="flex items-center gap-2 mb-3 px-2.5 py-1 border border-gray-200 rounded-full w-fit">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-            <span className="text-xs text-gray-500 font-medium tracking-tight">
+            <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+            <span className="text-[13px] text-gray-500 font-medium tracking-tight">
               Open to new opportunities
             </span>
           </div>
           {/* Headline */}
-          <h1 className="text-4xl font-medium leading-tight text-gray-900 tracking-tight">
+          <h1 className="text-4xl font-medium leading-tight tracking-tight text-gray-900">
             I'm Declan, a product designer focused on building {""}
             <span className="font-abalone text-accent">intuitive</span>
             {""} and {""}
@@ -28,6 +28,9 @@ export default function Home() {
       </section>
 
       <section className="min-h-screen flex flex-col justify-center">
+        {/* <h2 className="text-3xl font-medium leading-tight tracking-tight text-gray-900 pb-4">
+          Selected <span className="font-abalone text-accent">works</span>
+        </h2> */}
         <div className="grid grid-cols-6 gap-6">
           {/* Row 1 - two cards */}
           <div className="col-span-3">
@@ -41,7 +44,7 @@ export default function Home() {
           <div className="col-span-3">
             <ProjectCard
               title="Kintra: design to development"
-              category="Category here"
+              category="SwiftUI development"
               year="2025"
               href="/work/"
             />

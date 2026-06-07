@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 
 // Next.js loads Inter directly from Google - fast and no external requests
 const inter = Inter({
@@ -27,7 +28,7 @@ export default function RootLayout({
         className={`${inter.variable} font-sans antialiased bg-white text-gray-900`}
       >
         {/* Navigation Bar*/}
-        <nav className="border-b border-gray-100">
+        <nav className="border-b border-gray-200">
           <Container>
             <div className="flex items-center justify-between py-5">
               {/* Left: My name*/}
@@ -66,7 +67,14 @@ export default function RootLayout({
         </nav>
 
         {/* Page Content */}
-        <main>{children}</main>
+        <main className="pb-[160]">{children}</main>
+
+        {/* Footer */}
+        <footer className="border-t border-gray-200 pt-10 pb-6">
+          <Container>
+            <Footer />
+          </Container>
+        </footer>
       </body>
     </html>
   );
