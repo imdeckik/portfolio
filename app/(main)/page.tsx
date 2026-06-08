@@ -1,5 +1,5 @@
-import Container from "./components/Container";
-import ProjectCard from "./components/ProjectCard";
+import Container from "@/app/components/Container";
+import ProjectCard from "@/app/components/ProjectCard";
 
 export default function Home() {
   return (
