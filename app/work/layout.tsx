@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Container from "../components/Container";
 
+/* This layout.tsx is a Navbar for all case study */
+
 export default function WorkLayout({
   children,
 }: {

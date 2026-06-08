@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "../components/Container";
-import Footer from "../components/Footer";
+import Container from "@/app/components/Container";
+import Footer from "@/app/components/Footer";
 import React from "react";
 
 export default function MainLayout({

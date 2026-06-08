@@ -1,5 +1,5 @@
 type CaseStudySectionProps = {
-  label: string;
+  label?: string;
   title: string;
   description?: string;
   children?: React.ReactNode;
@@ -14,20 +14,28 @@ export default function CaseStudySectionProps({
   id,
 }: CaseStudySectionProps) {
   return (
-    <section id={id} className="mb-24">
+    <section id={id} className="mb-40 w-8/10">
       {/* Label */}
-      <p className="text-xs text-gray-900 uppercase mb-4">{label}</p>
+      <p className="text-xs font-medium text-gray-400 uppercase mb-4">
+        {label}
+      </p>
 
       {/* Title */}
-      <h2 className="text-2xl font-medium text-gray-900 mb-4">{title}</h2>
+      <h2 className="text-[20px] font-medium text-gray-900 leading-none mb-4">
+        {title}
+      </h2>
 
-      {/* Optional description */}
-      {description && (
-        <p className="text-[15px] text-gray-600 leading-normal"></p>
-      )}
+      <div className="flex flex-col gap-4">
+        {/* Optional description */}
+        {description && (
+          <p className="text-[15px] text-gray-500 leading-relaxed">
+            {description}
+          </p>
+        )}
 
-      {/* Flexible content */}
-      {children}
+        {/* Flexible content */}
+        {children}
+      </div>
     </section>
   );
 }
