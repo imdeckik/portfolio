@@ -21,14 +21,14 @@ export default function CaseStudySectionProps({
       </p>
 
       {/* Title */}
-      <h2 className="text-[20px] font-medium text-gray-900 leading-none mb-4">
+      <h2 className="text-xl font-medium text-gray-900 leading-none mb-4 tracking-tight">
         {title}
       </h2>
 
       <div className="flex flex-col gap-4">
         {/* Optional description */}
         {description && (
-          <p className="text-[15px] text-gray-500 leading-relaxed">
+          <p className="text-[15px] text-gray-500 leading-normal">
             {description}
           </p>
         )}

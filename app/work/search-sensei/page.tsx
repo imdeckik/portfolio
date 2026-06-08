@@ -1,6 +1,7 @@
 import CaseStudySectionProps from "@/app/components/CaseStudySection";
-import Container from "../../components/Container";
+import Container from "@/app/components/Container";
 import Link from "next/link";
+import SplitView from "@/app/components/SplitView";
 
 export default function SearchSensei() {
   return (
@@ -168,7 +169,7 @@ export default function SearchSensei() {
               description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
             >
               <p className="text-[15px] text-gray-500 leading-normal mb-10">
-                The AI mode toggle wasn't distinct enough — users couldn't tell
+                The AI mode toggle wasn't distinct enough, users couldn't tell
                 it was doing anything different Results felt overwhelming — too
                 much text and information competing for attention No clear
                 visual hierarchy between AI-generated and traditional results
@@ -178,15 +179,42 @@ export default function SearchSensei() {
             </CaseStudySectionProps>
 
             <CaseStudySectionProps
-              id="final_design"
+              id="final-design"
               label="Final Design"
               title="Search, reimagined"
               description="Here's how the final experience comes together, screen by screen."
+            >
+              <SplitView
+                title="The default state"
+                description="The first thing users see when they open search. Trending searches for those who aren't sure what to ask, recent searches and favourites in the sidebar for those who are."
+              />
+              <SplitView
+                title="Search results"
+                description="Results are organised by relevance, not recency. The most useful answer surfaces first, followed by a primary card and supporting results below. Every result is tagged by category so users can orient themselves at a glance."
+              />
+              <SplitView
+                title="AI Chatbot"
+                description="When a search result isn't enough, users can keep going. The chatbot lets users ask follow-up questions and dig deeper, without losing the context of where they started. A &ldquo;Back to search results&rdquo; link keeps them oriented the whole time."
+              />
+            </CaseStudySectionProps>
+
+            <CaseStudySectionProps
+              label="AI Mode: Deep Dive"
+              title="Title here"
+              description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
             ></CaseStudySectionProps>
 
             <CaseStudySectionProps
-              title="The default state"
-              description="Here's how the final experience comes together, screen by screen."
+              label="Information Hierarchy"
+              title="Title here"
+              description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
+            ></CaseStudySectionProps>
+
+            <CaseStudySectionProps
+              id="learnings"
+              label="Learnings"
+              title="What i learnt"
+              description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
             ></CaseStudySectionProps>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Container from "../components/Container";
+import Container from "@/app/components/Container";
+import Footer from "@/app/components/Footer";
 
 /* This layout.tsx is a Navbar for all case study */
 
@@ -27,6 +28,13 @@ export default function WorkLayout({
       </nav>
 
       <main>{children}</main>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 pt-10 pb-6">
+        <Container>
+          <Footer />
+        </Container>
+      </footer>
     </>
   );
 }
