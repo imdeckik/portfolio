@@ -2,6 +2,7 @@ import CaseStudySectionProps from "@/app/components/CaseStudySection";
 import Container from "@/app/components/Container";
 import Link from "next/link";
 import SplitView from "@/app/components/SplitView";
+import TabSwitcher from "@/app/components/TabSwitcher";
 
 export default function SearchSensei() {
   return (
@@ -78,12 +79,12 @@ export default function SearchSensei() {
 
             {/* Intro text */}
             <section id="overview" className="grid grid-cols-2 gap-4 mb-20">
-              <p className="text-[15px] text-gray-500 leading-normal">
+              <p className="text-[15px] font-medium text-gray-500 leading-normal">
                 When Search Sensei's CEO came to our university capstone, he had
                 a platform with real enterprise ambition and no UI to show for
                 it.
               </p>
-              <p className="text-[15px] text-gray-500 leading-normal">
+              <p className="text-[15px] font-medium text-gray-500 leading-normal">
                 Our three-person team took on the full design, a public-facing
                 AI search experience, and a developer handoff document, from a
                 blank canvas.
@@ -202,7 +203,24 @@ export default function SearchSensei() {
               label="AI Mode: Deep Dive"
               title="Title here"
               description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
-            ></CaseStudySectionProps>
+            >
+              <TabSwitcher
+                tabs={[
+                  {
+                    label: "Traditional mode",
+                    content: (
+                      <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                  {
+                    label: "AI mode",
+                    content: (
+                      <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                ]}
+              />
+            </CaseStudySectionProps>
 
             <CaseStudySectionProps
               label="Information Hierarchy"
