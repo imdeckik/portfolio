@@ -1,8 +1,9 @@
+import Link from "next/link";
 import CaseStudySectionProps from "@/app/components/CaseStudySection";
 import Container from "@/app/components/Container";
-import Link from "next/link";
 import SplitView from "@/app/components/SplitView";
 import TabSwitcher from "@/app/components/TabSwitcher";
+import IconCard from "@/app/components/IconCard";
 
 export default function SearchSensei() {
   return (
@@ -105,7 +106,22 @@ export default function SearchSensei() {
               label="Problem"
               title="Search has gotten smarter. The experience hasn't kept up."
               description="AI can now answer questions directly, but most interfaces leave users with more questions than answers. Three friction points kept surfacing across existing products:"
-            ></CaseStudySectionProps>
+            >
+              <div className="grid grid-cols-3 border border-gray-200 divide-x divide-gray-200">
+                <IconCard
+                  title="Trust and transparency"
+                  description="AI gives a direct answer, but its reliability is uncertain"
+                />
+                <IconCard
+                  title="Query formation"
+                  description="Not all users know how to phrase questions effectively"
+                />
+                <IconCard
+                  title="Information overload"
+                  description="Without smart filtering, results pages becomes filled with noise"
+                />
+              </div>
+            </CaseStudySectionProps>
 
             <CaseStudySectionProps
               id="objectives"
@@ -140,9 +156,37 @@ export default function SearchSensei() {
               description="We started by analysing three products: Google, Bing, and NAB, because they represent different ends of the search spectrum: consumer-scale AI search and a real-world example of enterprise website search. For each, we mapped out every element and interaction in FigJam, screenshotted and annotated key UI patterns, then sorted them into what worked, what didn't, and what was worth adapting."
             >
               <div className="aspect-video bg-gray-100" />
-              <p className="text-[15px] text-gray-500 leading-normal mb-10">
+              <p className="text-[15px] text-gray-500 leading-normal">
                 What we decided to carry into our design:
               </p>
+              <TabSwitcher
+                tabs={[
+                  {
+                    label: "Predictive search",
+                    content: (
+                      <div className="w-full h-[300px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                  {
+                    label: "Cards and lists",
+                    content: (
+                      <div className="w-full h-[300px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                  {
+                    label: "Categories tag",
+                    content: (
+                      <div className="w-full h-[300px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                  {
+                    label: "Filters",
+                    content: (
+                      <div className="w-full h-[300px] bg-gray-100 border border-gray-200" />
+                    ),
+                  },
+                ]}
+              />
             </CaseStudySectionProps>
 
             <CaseStudySectionProps
@@ -188,34 +232,55 @@ export default function SearchSensei() {
               <SplitView
                 title="The default state"
                 description="The first thing users see when they open search. Trending searches for those who aren't sure what to ask, recent searches and favourites in the sidebar for those who are."
+                height={360}
               />
               <SplitView
                 title="Search results"
                 description="Results are organised by relevance, not recency. The most useful answer surfaces first, followed by a primary card and supporting results below. Every result is tagged by category so users can orient themselves at a glance."
+                height={360}
               />
               <SplitView
                 title="AI Chatbot"
                 description="When a search result isn't enough, users can keep going. The chatbot lets users ask follow-up questions and dig deeper, without losing the context of where they started. A &ldquo;Back to search results&rdquo; link keeps them oriented the whole time."
+                height={360}
               />
             </CaseStudySectionProps>
 
             <CaseStudySectionProps
               label="AI Mode: Deep Dive"
-              title="Title here"
-              description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
+              title="User choose how they want to search."
+              description="The same search query, two completely different experiences. Here's what changes when you choose between:"
             >
               <TabSwitcher
                 tabs={[
                   {
                     label: "Traditional mode",
                     content: (
-                      <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                      <div className="flex flex-col gap-4">
+                        <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                        <p className="text-[15px] text-gray-500 leading-normal">
+                          Clean, familiar results. A primary card surfaces the
+                          most relevant content at the top, followed by
+                          supporting cards and a list of additional results
+                          below. No AI involved, just the most relevant content,
+                          clearly organised.
+                        </p>
+                      </div>
                     ),
                   },
                   {
                     label: "AI mode",
                     content: (
-                      <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                      <div className="flex flex-col gap-4">
+                        <div className="w-full h-[500px] bg-gray-100 border border-gray-200" />
+                        <p className="text-[15px] text-gray-500 leading-normal">
+                          With AI on, a summary card appears at the top, tagged
+                          with either High or Low confidence so users always
+                          know how much to trust it. Related question
+                          suggestions and a follow-up chat input let users keep
+                          exploring without starting a new search
+                        </p>
+                      </div>
                     ),
                   },
                 ]}
@@ -224,9 +289,30 @@ export default function SearchSensei() {
 
             <CaseStudySectionProps
               label="Information Hierarchy"
-              title="Title here"
-              description="After sharing our initial concept with our client and lecturer, four things came back consistently:"
-            ></CaseStudySectionProps>
+              title="Designed for relevance, not recency."
+              description="Results are ranked by relevance and rendered into four distinct levels, each designed to match how much detail that result deserves."
+            >
+              <SplitView
+                title="AI summary card"
+                description="Only appears when AI mode is on. Generates a synthesised response with a confidence tag, sources, and suggested follow-up questions."
+                height={200}
+              />
+              <SplitView
+                title="Primary card"
+                description="The highest-relevance result. Full-width with an image, title, and a CTA button. Always the first thing users see when AI mode is off."
+                height={200}
+              />
+              <SplitView
+                title="Normal card"
+                description="The next tier, displayed as a three-column card row with title, description, and category tag."
+                height={200}
+              />
+              <SplitView
+                title="Lists"
+                description="Remaining results as compact rows for quick scanning."
+                height={200}
+              />
+            </CaseStudySectionProps>
 
             <CaseStudySectionProps
               id="learnings"
