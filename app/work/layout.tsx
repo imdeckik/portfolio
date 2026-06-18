@@ -15,7 +15,7 @@ export default function WorkLayout({
         <Container>
           <div className="flex items-center justify-between py-5">
             <span className="text-sm font-medium text-gray-900 tracking-tight">
-              Project name here
+              Declan Kikyanto
             </span>
             <Link
               href="/"

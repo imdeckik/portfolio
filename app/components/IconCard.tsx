@@ -1,7 +1,7 @@
 type IconCardProps = {
   icon?: React.ReactNode;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 };
 
 export default function IconCard({ icon, title, description }: IconCardProps) {

@@ -14,7 +14,7 @@ export default function CaseStudySectionProps({
   id,
 }: CaseStudySectionProps) {
   return (
-    <section id={id} className="mb-40 w-8/10">
+    <section id={id} className="mb-40 w-8/10 scroll-mt-8">
       {/* Label */}
       <p className="text-xs font-medium text-gray-400 uppercase mb-4">
         {label}

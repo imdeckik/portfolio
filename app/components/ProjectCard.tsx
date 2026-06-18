@@ -6,7 +6,9 @@ type ProjectCardProps = {
   category: string;
   year: string;
   href: string;
-  image?: string;
+  src?: string;
+  alt?: string;
+  info?: string;
 };
 
 export default function ProjectCard({
@@ -14,19 +16,21 @@ export default function ProjectCard({
   category,
   year,
   href,
-  image,
+  src,
+  alt = "",
+  info,
 }: ProjectCardProps) {
   return (
     <Link href={href} className="group block">
       {/* Thumbnail here */}
-      <div className="h-[400px] border border-gray-200 bg-gray-50 overflow-hidden mb-3">
-        {image && (
+      <div className="relative h-90 border border-gray-200 bg-white overflow-hidden mb-3">
+        {src && (
           <Image
-            src={image}
-            alt={title}
+            src={src}
+            alt={alt}
             width={800}
             height={600}
-            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+            className="absolute top-8 left-8 w-full group-hover:scale-[1.02] transition-transform duration-300"
           />
         )}
       </div>
@@ -34,8 +38,10 @@ export default function ProjectCard({
       {/* Card footer */}
       <div className="flex items-center justify-between">
         <span className="text-sm font-medium text-gray-900 tracking-tight">
-          {title}
+          {title}{" "}
+          <span className="text-sm text-gray-400 tracking-tight">{info}</span>
         </span>
+
         <span className="text-sm text-gray-400 tracking-tight">
           {category} · {year}
         </span>

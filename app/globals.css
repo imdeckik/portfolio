@@ -11,3 +11,7 @@
   --color-accent: #4a85d9;
   --font-abalone: "Abalone_Smile";
 }
+
+html {
+  scroll-behavior: smooth;
+}

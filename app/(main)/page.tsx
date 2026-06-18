@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section
         className="pb-24 flex flex-col justify-center"
-        style={{ minHeight: "calc(90vh - 72px" }}
+        style={{ minHeight: "calc(100vh - 76px" }}
       >
         <div className="max-w-2xl">
           {/* Open to opportunities indicator */}
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-screen flex flex-col justify-center">
+      <section className="min-h-screen flex flex-col justify-start">
         {/* <h2 className="text-3xl font-medium leading-tight tracking-tight text-gray-900 pb-4">
           Selected <span className="font-abalone text-accent">works</span>
         </h2> */}
@@ -39,6 +39,7 @@ export default function Home() {
               category="Product design"
               year="2026"
               href="/work/search-sensei"
+              src="/images/ss-traditional-mode-results.png"
             />
           </div>
           <div className="col-span-3">
@@ -47,16 +48,18 @@ export default function Home() {
               category="SwiftUI development"
               year="2025"
               href="/work/"
+              info="· Work in progress"
             />
           </div>
 
           {/* Row 2 - full width card */}
           <div className="col-span-6">
             <ProjectCard
-              title="Title here"
-              category="Category here"
-              year="Year here"
+              title="Spender"
+              category="Mobile design"
+              year="2026"
               href="/work/"
+              info="· Work in progress"
             />
           </div>
         </div>

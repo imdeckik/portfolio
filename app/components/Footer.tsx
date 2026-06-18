@@ -95,7 +95,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="col-span-3 flex items-end justify-star">
         <span className="text-sm text-gray-400 tracking-tight">
-          © 2026 · Designed and built with 🔥 by me
+          © 2026 · Designed and built by me
         </span>
       </div>
     </div>
