@@ -13,7 +13,7 @@ export default function WorkLayout({
     <>
       <nav className="border-b border-gray-200">
         <Container>
-          <div className="flex items-center justify-between py-5">
+          <div className="flex items-center justify-between h-18">
             <span className="text-sm font-medium text-gray-900 tracking-tight">
               Declan Kikyanto
             </span>
@@ -30,7 +30,7 @@ export default function WorkLayout({
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 pt-10 pb-6">
+      <footer className="bg-gray-50 pt-10 pb-6">
         <Container>
           <Footer />
         </Container>

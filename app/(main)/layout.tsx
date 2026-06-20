@@ -1,19 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import Container from "@/app/components/Container";
 import Footer from "@/app/components/Footer";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  // If you're on the homepage, pathname = "/"
+  // If you're on about, pathname = "/about"
+
   return (
     <>
       {/* Navigation Bar*/}
       <nav className="border-b border-gray-200">
         <Container>
-          <div className="flex items-center justify-between py-5">
+          <div className="flex items-center justify-between h-18">
             {/* Left: My name*/}
             <Link
               href="/"
@@ -25,13 +32,21 @@ export default function MainLayout({
             <div className="flex items-center gap-8">
               <Link
                 href="/"
-                className="text-sm text-accent font-medium tracking-tight"
+                className={`text-sm font-medium tracking-tight transition-colors ${
+                  pathname === "/" || pathname.startsWith("/work")
+                    ? "text-accent" // Active - you're here
+                    : "text-gray-400 hover:text-gray-500" // Inactive - you're not here
+                }`}
               >
                 Work
               </Link>
               <Link
                 href="/about"
-                className="text-sm text-gray-400 hover:text-gray-900 transition-colors font-medium tracking-tight"
+                className={`text-sm font-medium tracking-tight transition-colors ${
+                  pathname === "/about"
+                    ? "text-accent" // Active - you're here
+                    : "text-gray-400 hover:text-gray-500" // Inactive - you're not here
+                }`}
               >
                 About Me
               </Link>
@@ -53,7 +68,7 @@ export default function MainLayout({
       <main className="pb-[160]">{children}</main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 pt-10 pb-6">
+      <footer className="bg-gray-50 pt-10 pb-6">
         <Container>
           <Footer />
         </Container>

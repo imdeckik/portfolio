@@ -36,7 +36,7 @@ export default function SplitView({
       </div>
       {/* Right part (content) - 3 column or 30% */}
       <div className="col-span-3 flex flex-col gap-2">
-        <h3 className="text-[15px] font-medium text-gray-900 leading-none">
+        <h3 className="text-[15px ] font-medium text-gray-900 leading-none">
           {title}
         </h3>
         <p className="text-sm text-gray-500 leading-normal">{description}</p>
