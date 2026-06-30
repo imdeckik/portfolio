@@ -53,7 +53,7 @@ export default function MainLayout({
             </div>
             {/* Right: Resume */}
             <a
-              href="/resume.pdf"
+              href="/declankikyanto-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm/3.5 text-gray-500 hover:text-gray-900 tracking-tight transition-colors px-4 py-2.5 border border-gray-200 rounded-full"
@@ -65,10 +65,10 @@ export default function MainLayout({
       </nav>
 
       {/* Page Content */}
-      <main className="pb-[160]">{children}</main>
+      <main className="pb-[160] bg-white">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-gray-50 pt-10 pb-6">
+      <footer className="bg-bg pt-10 pb-6">
         <Container>
           <Footer />
         </Container>

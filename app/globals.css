@@ -9,9 +9,11 @@
 
 @theme {
   --color-accent: #4a85d9;
+  --color-bg: #f5f5f7;
   --font-abalone: "Abalone_Smile";
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: white;
 }

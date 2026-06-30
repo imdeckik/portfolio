@@ -33,12 +33,12 @@ export default function Footer() {
 
       {/* Top right: CTA (Click to action) */}
       <div className="col-span-3">
-        <h2 className="text-2xl font-semibold tracking-tight text-gray-900 mb-2">
+        <h2 className="text-2xl font-semibold tracking- text-gray-900 mb-2">
           Let's build something together
         </h2>
         <a
           href="mailto:declankikyanto27@gmail.com"
-          className="inline-block text-sm text-gray-500 bg-gray-100 border border-gray-200 px-3 py-1.5 hover:text-accent transition-colors rounded-full"
+          className="inline-block text-sm text-white bg-accent px-3 py-1.5 hover:bg-[#2B6DCA] transition-colors rounded-full duration-300"
         >
           declankikyanto27@gmail.com
         </a>
@@ -58,7 +58,7 @@ export default function Footer() {
             Work
           </Link>
           <Link
-            href="/"
+            href="/about"
             className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
           >
             About Me

@@ -28,9 +28,9 @@ export default function Home() {
       </section>
 
       <section className="min-h-screen flex flex-col justify-start">
-        {/* <h2 className="text-3xl font-medium leading-tight tracking-tight text-gray-900 pb-4">
-          Selected <span className="font-abalone text-accent">works</span>
-        </h2> */}
+        <span className="uppercase text-[13px] font-medium text-gray-400 mb-2">
+          Projects
+        </span>
         <div className="grid grid-cols-6 gap-6">
           {/* Row 1 - two cards */}
           <div className="col-span-3">

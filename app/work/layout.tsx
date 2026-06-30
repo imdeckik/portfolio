@@ -30,7 +30,7 @@ export default function WorkLayout({
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-gray-50 pt-10 pb-6">
+      <footer className="bg-bg pt-10 pb-6">
         <Container>
           <Footer />
         </Container>
