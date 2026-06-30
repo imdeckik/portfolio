@@ -40,7 +40,7 @@ export default function About() {
               {/* Profile Picture */}
               <div className="relative w-120 h-80 mx-auto mb-8 overflow-hidden border border-gray-200">
                 <Image
-                  src="/images/profile_picture.jpg"
+                  src="/images/profile_picture.JPG"
                   alt="A photo of myself"
                   fill
                   className="object-cover scale-110"
