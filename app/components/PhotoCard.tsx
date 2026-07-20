@@ -9,7 +9,7 @@ type PhotoCardProps = {
 export default function PhotoCard({ src, label, alt = "" }: PhotoCardProps) {
   return (
     <div>
-      <div className="aspect-square bg-gray-100 border border-gray-100 mb-1 overflow-hidden">
+      <div className="aspect-square bg-gray-100 mb-1 overflow-hidden">
         {src && (
           <Image
             src={src}

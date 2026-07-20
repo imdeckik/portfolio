@@ -33,16 +33,17 @@ export default function About() {
         <div className="grid grid-cols-12 gap-4">
           <div
             className="col-span-6 col-start-4 flex flex-col gap-40"
-            style={{ paddingTop: "calc(40%)" }}
+            style={{ paddingTop: "calc(30%)" }}
           >
             {/* 1st part - About me */}
             <div className="flex flex-col gap-10">
               {/* Profile Picture */}
-              <div className="relative w-120 h-80 mx-auto mb-8 overflow-hidden border border-gray-200">
+              <div className="relative w-120 h-80 mx-auto mb-8 overflow-hidden border border-gray-200 hover:scale-105 hover:-rotate-1 transition-all duration-500">
                 <Image
                   src="/images/profile_picture.JPG"
                   alt="A photo of myself"
                   fill
+                  sizes="50vw   "
                   className="object-cover scale-110"
                   priority
                 />

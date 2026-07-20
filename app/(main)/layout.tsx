@@ -68,7 +68,7 @@ export default function MainLayout({
       <main className="pb-[160] bg-white">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-bg pt-10 pb-6">
+      <footer className="bg-accent pt-10 pb-6">
         <Container>
           <Footer />
         </Container>

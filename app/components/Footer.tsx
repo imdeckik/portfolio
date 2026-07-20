@@ -26,19 +26,19 @@ export default function Footer() {
     <div className="grid grid-cols-6 grid-rows-3 gap-6">
       {/* Top left: live time */}
       <div className="col-span-3">
-        <p className="text-sm text-gray-400 tracking-tight">
+        <p className="text-[15px] font-medium text-white tracking-tight">
           Melbourne, {time}
         </p>
       </div>
 
       {/* Top right: CTA (Click to action) */}
       <div className="col-span-3">
-        <h2 className="text-2xl font-semibold tracking- text-gray-900 mb-2">
+        <h2 className="text-2xl font-semibold tracking- text-white mb-3">
           Let's build something together
         </h2>
         <a
           href="mailto:declankikyanto27@gmail.com"
-          className="inline-block text-sm text-white bg-accent px-3 py-1.5 hover:bg-[#2B6DCA] transition-colors rounded-full duration-300"
+          className="inline-block text-[15px] text-accent font-medium bg-white px-4 py-1.5 hover:scale-105 hover:-rotate-1 transition-all rounded-full duration-500"
         >
           declankikyanto27@gmail.com
         </a>
@@ -49,17 +49,17 @@ export default function Footer() {
 
       {/* Navigate to: */}
       <div className="col-span-1 mt-6">
-        <p className="text-sm font-medium text-gray-900 mb-4">Pages</p>
+        <p className="text-[15px] font-medium text-[#aacdff] mb-4">Pages</p>
         <div className="flex flex-col gap-3">
           <Link
             href="/"
-            className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
+            className="text-[15px] font-medium text-white hover:text-[#aacdff] transition-colors"
           >
             Work
           </Link>
           <Link
             href="/about"
-            className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
+            className="text-[15px] font-medium text-white hover:text-[#aacdff] transition-colors"
           >
             About Me
           </Link>
@@ -71,13 +71,13 @@ export default function Footer() {
 
       {/* Connect: */}
       <div className="col-span-1 mt-6">
-        <p className="text-sm font-medium text-gray-900 mb-4">Connect</p>
+        <p className="text-[15px] font-medium text-[#aacdff] mb-4">Connect</p>
         <div className="flex flex-col gap-3">
           <a
             href="https://linkedin.com/in/declankikyanto"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
+            className="text-[15px] font-medium text-white hhover:text-[#aacdff] transition-colors"
           >
             LinkedIn
           </a>
@@ -85,7 +85,7 @@ export default function Footer() {
             href="https://github.com/imdeckik"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
+            className="text-[15px] font-medium text-white hover:text-[#aacdff] transition-colors"
           >
             GitHub
           </a>
@@ -94,7 +94,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="col-span-3 flex items-end justify-star">
-        <span className="text-sm text-gray-400 tracking-tight">
+        <span className="text-[15px] font-medium text-white tracking-tight">
           © 2026 · Designed and built by me
         </span>
       </div>
