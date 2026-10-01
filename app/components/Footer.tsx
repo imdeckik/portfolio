@@ -14,7 +14,7 @@ export default function Footer() {
           hour: "2-digit",
           minute: "2-digit",
           hour12: true,
-        })
+        }),
       );
     };
     update();
@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* Top right: CTA (Click to action) */}
       <div className="col-span-3">
-        <h2 className="text-2xl font-semibold tracking- text-white mb-3">
+        <h2 className="text-2xl font-semibold tracking-tight text-white mb-3">
           Let's build something together
         </h2>
         <a
@@ -77,7 +77,7 @@ export default function Footer() {
             href="https://linkedin.com/in/declankikyanto"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[15px] font-medium text-white hhover:text-[#aacdff] transition-colors"
+            className="text-[15px] font-medium text-white hover:text-[#aacdff] transition-colors"
           >
             LinkedIn
           </a>
@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="col-span-3 flex items-end justify-star">
+      <div className="col-span-3 flex items-end justify-start">
         <span className="text-[15px] font-medium text-white tracking-tight">
           © 2026 · Designed and built by me
         </span>

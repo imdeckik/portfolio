@@ -65,7 +65,7 @@ export default function MainLayout({
       </nav>
 
       {/* Page Content */}
-      <main className="pb-[160] bg-white">{children}</main>
+      <main className="pb-40 bg-white">{children}</main>
 
       {/* Footer */}
       <footer className="bg-accent pt-10 pb-6">

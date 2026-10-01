@@ -87,7 +87,7 @@ export default function About() {
                   <div className="w-10 h-10 bg-[#D97757] rounded-xl flex items-center justify-center p-2">
                     <Image
                       src="/images/tools/claude-ai-icon.svg"
-                      alt="Figma"
+                      alt="Claude"
                       width={24}
                       height={24}
                     />
@@ -95,7 +95,7 @@ export default function About() {
                   <div className="w-10 h-10 bg-[#00005B] rounded-xl flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/tools/after-effects.svg"
-                      alt="Figma"
+                      alt="After Effects"
                       width={40}
                       height={40}
                     />
@@ -112,7 +112,7 @@ export default function About() {
                   <div className="w-10 h-10 bg-white border border-gray-200 rounded-xl flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/tools/react_light.svg"
-                      alt="Figma"
+                      alt="React"
                       width={28}
                       height={28}
                     />
@@ -120,7 +120,7 @@ export default function About() {
                   <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/tools/nextjs_icon_dark.svg"
-                      alt="Figma"
+                      alt="Next.js"
                       width={40}
                       height={40}
                     />
@@ -136,7 +136,7 @@ export default function About() {
                   href="mailto:declankikyanto27@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-900 hover:text-blue-500 transition-colors duraiton-300"
+                  className="text-gray-900 hover:text-blue-500 transition-colors duration-300"
                 >
                   declankikyanto27@gmail.com
                 </a>

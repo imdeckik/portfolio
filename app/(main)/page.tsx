@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section
         className="pb-24 flex flex-col justify-center"
-        style={{ minHeight: "calc(100vh - 76px" }}
+        style={{ minHeight: "calc(100vh - 76px)" }}
       >
         <div className="max-w-2xl">
           {/* Open to opportunities indicator */}
@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           {/* Headline */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight text-gray-900">
-            I'm Declan, a product designer focused on building {""}
+            I'm Declan, a product designer focused on building{" "}
             <span className="font-abalone text-accent">intuitive</span> and{" "}
             <span className="font-abalone text-accent">useful products.</span>
           </h1>
