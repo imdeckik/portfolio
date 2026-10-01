@@ -5,7 +5,7 @@ type ProjectCardProps = {
   title: string;
   category: string;
   year: string;
-  href: string;
+  href?: string; // <- add "?" so it's optional
   src?: string;
   alt?: string;
   info?: string;
@@ -20,8 +20,9 @@ export default function ProjectCard({
   alt = "",
   info,
 }: ProjectCardProps) {
-  return (
-    <Link href={href} className="group block">
+  // The card's contents, stored ina variable so both versions below can use it
+  const content = (
+    <>
       {/* Thumbnail here */}
       <div className="relative h-90 border border-gray-200 bg-white overflow-hidden mb-3">
         {src && (
@@ -46,6 +47,18 @@ export default function ProjectCard({
           {category} · {year}
         </span>
       </div>
+    </>
+  );
+
+  // No href -> a plain, non-clickable card
+  if (!href) {
+    return <div className="block cursor-default">{content}</div>;
+  }
+
+  // Has an href -> a clickable card
+  return (
+    <Link href={href} className="group block">
+      {content}
     </Link>
   );
 }

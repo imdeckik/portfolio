@@ -133,7 +133,7 @@ export default function About() {
                 delivers valuable products. So if you're working on something
                 cool or looking to hire, please don't hesitate to contact me at{" "}
                 <a
-                  href="mailto:decankikyanto27@gmail.com"
+                  href="mailto:declankikyanto27@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-900 hover:text-blue-500 transition-colors duraiton-300"

@@ -20,8 +20,7 @@ export default function Home() {
           {/* Headline */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight text-gray-900">
             I'm Declan, a product designer focused on building {""}
-            <span className="font-abalone text-accent">intuitive</span>
-            {""} and {""}
+            <span className="font-abalone text-accent">intuitive</span> and{" "}
             <span className="font-abalone text-accent">useful products.</span>
           </h1>
         </div>
@@ -47,8 +46,7 @@ export default function Home() {
               title="Kintra: design to development"
               category="SwiftUI development"
               year="2025"
-              href="/work/"
-              info="· Work in progress"
+              info="· Coming soon"
             />
           </div>
 
@@ -58,8 +56,7 @@ export default function Home() {
               title="Spender"
               category="Mobile design"
               year="2026"
-              href="/work/"
-              info="· Work in progress"
+              info="· Coming soon"
             />
           </div>
         </div>
